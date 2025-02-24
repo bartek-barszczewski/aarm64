@@ -1,3 +1,8 @@
+; GNU AARM46
+; sudo as prog.asm -o prog.o
+; sudo ld prog.o -o prog
+; gdb -q ./prog
+;
 .section .text
 .global _start
 
