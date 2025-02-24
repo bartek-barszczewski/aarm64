@@ -11,24 +11,24 @@ xadd:
         mov             x0, #1
         mov             x1, #2
         add             x2, x0, x1
-        bl              xnull
+        bl              xzero
         b               xsub
 
 xsub:
         mov             x0, #10
         mov             x1, #9
         sub             x2, x1, x0
-        bl              xnull
+        bl              xzero
         b               xmul
 
 xmul:
         mov             x0, #10
         mov             x1, #10
         mul             x2, x0, x1
-        bl              xnull
+        bl              xzero
         b               exit
 
-xnull:
+xzero:
         mov             x0, #0
         mov             x1, #0
         ret
